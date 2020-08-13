@@ -13,7 +13,7 @@ echo "Using server ${AUTHSERVER}"
 
 if [ -n "${RENEW}" ]; then
 	echo "Renewing."
-	certbot renew --force-renewal
+	certbot renew
 else
 	echo "Getting new cert."
 	if [ -z "${DOMAIN}" ]; then echo "Domain mising."; exit; fi
